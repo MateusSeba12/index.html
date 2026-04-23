@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>⛩️ Mangá Ichiba ⛩️</title>
+
+<style>
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+
+    background-image: 
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("https://i.pinimg.com/1200x/53/85/5e/53855e227e5e63552f68e01277a3ca8e.jpg");
+
+    background-size: cover; /* cobre tudo */
+    background-position: center top; /* mostra parte mais importante */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* MENU */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,0.9);
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-left, .nav-center, .nav-right {
+    flex: 1;
+}
+
+.nav-center {
+    text-align: center;
+}
+
+.nav-right {
+    text-align: right;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #22c55e;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+}
+/* GRID */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* CARD */
+.card {
+    background: rgba(0,0,0,0.8);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card h2 {
+    margin: 10px 0 5px;
+}
+
+.card p {
+    margin: 5px;
+}
+
+/* BOTÃO */
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 15px;
+    background: #22c55e;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    background: #16a34a;
+}
+
+/* SOBRE REDUZIDO */
+.sobre {
+    background: rgba(0,0,0,0.85);
+    padding: 15px;
+    text-align: center;
+    max-width: 500px;
+    margin: 40px auto;
+    border-radius: 12px;
+}
+
+.sobre img {
+    border-radius: 50%;
+    margin: 10px 0;
+    width: 90px;
+}
+
+.sobre h2 {
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+.sobre p {
+    margin: 4px 0;
+    font-size: 14px;
+}
+
+.sobre a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sobre a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.8);
+
+}
+
+
+
+</style>
+
+</head>
+<body>
+
+<!-- MENU -->
+<nav>
+    <div class="nav-left">
+        <a href="#home">🏠 Home</a>
+    </div>
+
+    <div class="nav-center">
+        <a href="#home" class="logo">⛩️ Mangá Ichiba ⛩️</a>
+    </div>
+
+    <div class="nav-right">
+        <a href="#sobre">👤 Sobre</a>
+    </div>
+</nav>
+
+<!-- MANGÁS -->
+<main class="container" id="home">
+
+    <div class="card">
+        <img src="https://i.pinimg.com/1200x/7b/7a/a3/7b7aa34c1532548663545faa015676f2.jpg">
+        <h2>One Piece Vol. 1</h2>
+        <p>R$ 29,90</p>
+        <a href="#" class="btn">Comprar</a>
+    </div>
+
+    <div class="card">
+        <img src="https://i.pinimg.com/1200x/5b/8e/0c/5b8e0c4625941e16750114b460c1722f.jpg">
+        <h2>Naruto Vol. 1</h2>
+        <p>R$ 24,90</p>
+        <a href="#" class="btn">Comprar</a>
+    </div>
+
+    <div class="card">
+        <img src="https://i.pinimg.com/736x/c4/f3/15/c4f315ab6df8d6a72ffe2dcdd9178e97.jpg">
+        <h2>Bleach Vol. 1</h2>
+        <p>R$ 26,90</p>
+        <a href="#" class="btn">Comprar</a>
+    </div>
+
+    <div class="card">
+        <img src="https://i.pinimg.com/736x/bc/cf/6d/bccf6dd37f2ebb94b9693df0a353268a.jpg">
+        <h2>Attack on Titan Vol. 1</h2>
+        <p>R$ 32,90</p>
+        <a href="#" class="btn">Comprar</a>
+    </div>
+
+    <div class="card">
+        <img src="https://i.pinimg.com/736x/9f/dc/74/9fdc74eaf93b4cac79224437e9edb37b.jpg">
+        <h2>Death Note Vol. 1</h2>
+        <p>R$ 27,90</p>
+        <a href="#" class="btn">Comprar</a>
+    </div>
+
+    <div class="card">
+        <img src="https://i.pinimg.com/1200x/53/dc/20/53dc20c4192997ffc2cbe8be7daf8600.jpg">
+        <h2>Chainsaw Man Vol. 1</h2>
+        <p>R$ 29,90</p>
+        <a href="#" class="btn">Comprar</a>
+    </div>
+
+    <div class="card">
+        <img src="https://i.pinimg.com/736x/30/77/58/307758d9cf34ca96a5d6fd0549518da7.jpg">
+        <h2>Jujutsu Kaisen Vol. 1</h2>
+        <p>R$ 31,90</p>
+        <a href="#" class="btn">Comprar</a>
+    </div>
+
+    <div class="card">
+        <img src="https://i.pinimg.com/736x/1e/b1/cd/1eb1cde89565ad4dc75b0ec1dfabf34a.jpg">
+        <h2>Black Clover Vol. 1</h2>
+        <p>R$ 25,90</p>
+        <a href="#" class="btn">Comprar</a>
+    </div>
+
+    <div class="card">
+        <img src="https://i.pinimg.com/1200x/e4/bc/d2/e4bcd250b293f2c9af355130f7fd144d.jpg">
+        <h2>Berserk Vol. 1</h2>
+        <p>R$ 30,90</p>
+        <a href="#" class="btn">Comprar</a>
+    </div>
+
+    <div class="card">
+        <img src="https://i.pinimg.com/1200x/22/0e/84/220e84e48ce3ee0cdd968907b708d811.jpg">
+        <h2>Demon Slayer Vol. 1</h2>
+        <p>R$ 29,90</p>
+        <a href="#" class="btn">Comprar</a>
+    </div>
+
+</main>
+
+<!-- SOBRE -->
+<section class="sobre" id="sobre">
+    <img src="https://i.pinimg.com/736x/a7/14/af/a714afa36fef6765da0fc53081f2bf2c.jpg">
+    <p></strong> ⛩️ Mangá Ichiba ⛩️</p>
+    <p><strong>Sobre:</strong> A Mangá Ichiba é uma loja virtual dedicada a venda de mangás, na qual oferece uma grande variedade de materiais para os fãs de animes e mangás</p>
+    <p><strong>Email comercial:</strong> mangaichibaoficial@gmail.com </p>
+</section>
+
+<footer>
+    <p>© 2026 - Mangá Ichiba 🌸</p>
+</footer>
+
+</body>
+</html>
